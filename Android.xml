@@ -311,5 +311,23 @@
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
+    <template name="tag" value="private static final String TAG = &quot;$packageName$.$className$&quot;;" description="Define the debug tag" toReformat="true" toShortenFQNames="true">
+    <variable name="packageName" expression="currentPackage()" defaultValue="plop" alwaysStopAt="true" />
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+    <template name="runUIThread" value="$className$.this.runOnUiThread(new Runnable() {&#10;    @Override&#10;    public void run() {&#10;        &#10;    }&#10;});&#10;" description="Run code on UI thread" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="patternViewHolder" value="final ViewHolder holder;&#10;&#10;if (convertView == null) {&#10;    LayoutInflater mInflater = mContext.getLayoutInflater();&#10;    convertView = mInflater.inflate(R.layout., null);&#10;&#10;    holder = new ViewHolder();&#10;    convertView.setTag(holder);&#10;}&#10;else&#10;    holder = (ViewHolder) convertView.getTag();&#10;        " description="Implement pattern view holder for Adapter.getView function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
 

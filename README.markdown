@@ -6,12 +6,11 @@ Yes. Simply clone the repository to your AndroidStudio's config/templates folder
 
 Default location for live templates are in the following directories:
 
-Windows: <your home directory>\.<product name><version number>\config\templates
-Linux: ~/.<product name><version number>/config/templates
-OS X: ~/Library/Preferences/<product name><version number>/templates
+- Windows: `<your home directory>`\\`<product name>`.`<version number>`\config\templates
+- Linux: ~/.`<product name`>`<version number>`/config/templates
+- OS X: ~/Library/Preferences/`<product name>`.`<version number>`/templates
 
 If you don't find it, JetBrains [has you covered](https://www.jetbrains.com/idea/webhelp/live-templates.html) in finding the location of this folder.
-
 
 Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfer/idea-live-templates .` and restart AndroidStudio.
 
@@ -33,8 +32,7 @@ Once you found it, `cd` into it, run `git clone https://github.com/keyboardsurfe
 - **`patternViewHolder`**: "Implement pattern view holder for Adapter.getView function"
 - **`rgC`**: "get a color from resources"
 - **`rgS`**: "get a String from resources"
-- **`rouiT`**: "runOnUIThread"
-- **`runUIThread`**: "Run code on UI thread"
+- **`runOnUIThread`**: "Run code on UI thread"
 - **`sbc`**: "block comment for structuring code"
 - **`starter`**: "Creates a static start(...) helper method to start an Activity"
 - **`tag`**: "Define the debug tag"
